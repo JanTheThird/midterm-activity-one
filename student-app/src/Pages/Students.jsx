@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import StudentList from "../Components/StudentList";
 
 function Students() {
 
