@@ -22,8 +22,25 @@ function Students() {
   }, []);
 
   return (
-    <div>
+<div>
       <h2>Student List</h2>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {students.map((student) => (
+            <StudentList key={student.id} student={student} />
+          ))}
+        </tbody>
+
+      </table>
     </div>
   );
 }
